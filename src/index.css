@@ -34,8 +34,6 @@ body {
     
   }
         
-
-
 .card{
     background-color: #fff;
     color: #333;
@@ -83,6 +81,12 @@ body {
         cursor: pointer;
         background: none;
         border: none;
+     }
+     .review-stats{
+        color:#fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
      }
 
 
