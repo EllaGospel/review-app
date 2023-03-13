@@ -8,7 +8,7 @@ import ReviewList from "./component/ReviewList"
 import './index.css'
 import ReviewData from "./component/ReviewData"
 import About from './component/pages/About';
-import Aboutlink from './component/Aboutlink';
+// import Aboutlink from './component/Aboutlink';
 
 function App() {
   const [review, setReview] = useState(ReviewData)
@@ -33,7 +33,7 @@ function App() {
       <ReviewForm handleAdd={addReview}/>
       <ReviewStats review={review}/>
       <ReviewList review={review} revDelete={deleteReview}/>
-      <Aboutlink/>
+      {/* <Aboutlink/> */}
        </>
       }
       ></Route>
