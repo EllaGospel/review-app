@@ -11,7 +11,7 @@ function About() {
         <p>version 1.0.0</p>
         <br/>
         <p>
-          <Link to="/">Go Back Home</Link>
+          <Link to="/review-app">Go Back Home</Link>
           </p>
       </Card>
     </>
