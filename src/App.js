@@ -8,7 +8,7 @@ import ReviewList from "./component/ReviewList"
 import './index.css'
 import { ReviewProvider } from './component/ReviewContext';
 import About from './component/pages/About';
- import Aboutlink from './component/Aboutlink';
+import Aboutlink from './component/Aboutlink';
 
 function App() {
   
