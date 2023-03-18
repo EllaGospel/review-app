@@ -1,7 +1,10 @@
-import PropTypes from 'prop-types'
+
+import { useContext } from 'react'
+import ReviewContext from './ReviewContext'
 import ReviewItem from "./ReviewItem"
 
-function ReviewList({review, revDelete}) {
+function ReviewList() {
+  const {review} = useContext(ReviewContext)
     if(!review||review.length===0)
     return <p>no review yet</p>
 
@@ -9,7 +12,7 @@ function ReviewList({review, revDelete}) {
     <>
     <div>
         {review.map((item) => (
-            <ReviewItem key={item.id} item={item} revDelete={revDelete}/>
+            <ReviewItem key={item.id} item={item}/>
         ))}
     </div>
     </>

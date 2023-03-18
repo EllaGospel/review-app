@@ -1,12 +1,14 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
+import ReviewContext from "./ReviewContext"
 import Card from "./Card"
 import Button from "./Button"
 import Giverating from "./Giverating"
-function ReviewForm({handleAdd}) {
+function ReviewForm() {
     const [text, setText] = useState('')
     const [btnDisabled, setbtnDisabled] = useState(true)
     const [message, setmessage] = useState('')
     const [rating, setRating] =useState(10)
+    const {addReview} = useContext(ReviewContext)
 
     const textchangeHandler = (e) =>{
           if(text===''){
@@ -29,7 +31,7 @@ function ReviewForm({handleAdd}) {
           text,
           rating
         }
-         handleAdd(newReview)
+         addReview(newReview)
          setText('')
       }
     }

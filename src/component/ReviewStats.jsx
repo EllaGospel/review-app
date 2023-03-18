@@ -1,4 +1,7 @@
-function ReviewStats({review}) {
+import { useContext } from "react"
+import ReviewContext from "./ReviewContext"
+function ReviewStats() {
+   const{review} = useContext(ReviewContext)
     let avg =review.reduce((acc, cur)=>{
         return acc +cur.rating
     },0)/review.length
